@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMCT College of Engineering, Kozhikode</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<body>
+    <header>
+        <h1>KMCT College of Engineering</h1>
+        <nav>
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="main">
+        <img class="logo" src="https://kmctcoe.ac.in/img/logo/header_logo.svg" alt="KMCT Logo">
+        <h1 class="tagline">Empowering the Future through Innovation</h1>
+        <p class="subtext">Join KMCT Kozhikode and explore endless opportunities</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>KMCT College of Engineering, Kozhikode, established in 2001, is affiliated with KTU and accredited by AICTE.</p>
+        <p>We offer undergraduate and postgraduate programs in technology and engineering disciplines, fostering excellence and innovation.</p>
+        <p>Our commitment is to provide students with a high-quality education and prepare them for success in the global technology industry.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> NITC-P.O, Kallanthode - Nayarkuzhi Rd, Kozhikode, Kerala 673601</p>
+        <p><strong>Phone:</strong> +91 9745726888</p>
+        <p><strong>Email:</strong> mail@kmct.edu.in</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2001-2025 KMCT College of Engineering, Kozhikode. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot UI -->
+    <div class="chatbox-container">
+        <div class="chatbox" id="chatbox">
+            <div class="chatbox__header">
+                <h4>AI Chat Assistant</h4>
+                <div class="chatbox__controls">
+                    <button id="minimize-button" title="Minimize">&minus;</button>
+                    <button id="maximize-button" title="Maximize">⤢</button>
+                    <button id="close-button" title="Close">&times;</button>
+                </div>
+            </div>
+            <div class="chatbox__messages" id="chatbox-messages">
+                <div class="message bot-message">Hello! I'm the KMCT College AI Assistant. How can I help you today?</div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" id="chat-input" placeholder="Type your message here...">
+                <button id="speech-button" title="Voice input">🎤</button>
+                <button id="send-button" title="Send message">➤</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button id="chatbox-toggle" title="Chat with AI Assistant"></button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

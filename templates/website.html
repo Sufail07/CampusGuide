@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMCT College of Engineering, Kozhikode</title>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+</head>
+<body>
+    <header>
+        <h1>KMCT College of Engineering</h1>
+        <nav>
+            <a href="#main">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="main">
+        <img class="logo" src="https://kmctcoe.ac.in/img/logo/header_logo.svg" alt="KMCT Logo">
+        <h1 class="tagline">Empowering the Future through Innovation</h1>
+        <p class="subtext">Join KMCT Kozhikode and explore endless opportunities</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>KMCT College of Engineering, Kozhikode, established in 2001, is affiliated with KTU and accredited by AICTE.</p>
+        <p>We offer undergraduate and postgraduate programs in technology and engineering disciplines, fostering excellence and innovation.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> NITC-P.O, Kallanthode - Nayarkuzhi Rd, Kozhikode, Kerala 673601</p>
+        <p><strong>Phone:</strong> +91 9745726888</p>
+        <p><strong>Email:</strong> mail@kmct.edu.in</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2001 KMCT College of Engineering, Kozhikode</p>
+    </footer>
+
+    <!-- Chatbot UI -->
+    <div class="chatbox-container">
+        <div class="chatbox" id="chatbox">
+            <div class="chatbox__header">
+                <h4>AI Chat Assistant</h4>
+                <div class="chatbox__controls">
+                    <button id="minimize-button">&minus;</button>
+                    <button id="close-button">&times;</button>
+                </div>
+            </div>
+            <div class="chatbox__messages" id="chatbox-messages">
+                <div class="message bot-message">Hello! How can I assist you?</div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="send-button">➤</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button id="chatbox-toggle">💬</button>
+        </div>
+    </div>
+</body>
+</html>

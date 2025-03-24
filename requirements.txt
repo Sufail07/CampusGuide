@@ -1,0 +1,12 @@
+Flask
+flask-cors
+torch
+numpy
+nltk
+speechrecognition
+matplotlib
+seaborn
+scikit-learn
+pyaudio
+selenium
+google

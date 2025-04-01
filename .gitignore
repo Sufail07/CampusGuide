@@ -1,0 +1,13 @@
+# Ignore Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+*.log
+
+# Ignore environment variables and credentials
+.env
+.env.local
+*.secret
+config.json

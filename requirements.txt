@@ -1,0 +1,16 @@
+Flask
+flask-cors
+torch
+numpy
+nltk
+speechrecognition
+matplotlib
+seaborn
+scikit-learn
+pyaudio
+selenium
+google-generativeai
+markdown
+bleach
+webdriver-manager
+playwright

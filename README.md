@@ -16,11 +16,14 @@ CampusGuide is an intelligent chatbot designed to assist students at KMCT Colleg
 
 ## Technology Stack
 
-- **Backend**: Flask
-- **Natural Language Processing**: PyTorch for intent classification
+- **Flask**: A lightweight WSGI web application framework in Python.
+- **PyTorch**: For intent classification
+- **NLTK**: A leading platform for building Python programs to work with human language data.
 - **Speech Recognition**: SpeechRecognition library
-- **Web Scraping**: Selenium for retrieving student data
-- **Fallback Model**: Gemini AI for handling out-of-scope queries
+- **Playwright**: Web scraping for retrieving student data
+- **Markdown and Bleach**: For rendering and sanitizing HTML content.
+- **Google Generative AI**: Fallback model for handling out-of-scope queries
+
 
 ## Project Structure
 
@@ -56,13 +59,22 @@ CampusGuide/
    ```
    gemini=YOUR_GEMINI_API_KEY
    ```
+4. Install Playwright and Browser Binaries:
+    ```
+   playwright install
+   ```
 
-4. Run the Flask application:
+5. Set Up Environment Variables:
+   ```
+   gemini=YOUR_GEMINI_API_KEY
+   ```
+   
+6. Run the Flask application:
    ```bash
    python app.py
    ```
 
-5. Access the application in your browser at `http://localhost:5000`
+7. Access the application in your browser at `http://localhost:5000`
 
 ## Usage
 

@@ -61,7 +61,7 @@ CampusGuide/
    ```
 4. Install Playwright and Browser Binaries:
     ```
-   playwright install
+   playwright install chrome
    ```
 
 5. Set Up Environment Variables:
